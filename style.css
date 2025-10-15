@@ -44,11 +44,16 @@ input {
 
 /* header */
 header {
-  flex: 0 0 10rem;
   width: 100%;
+  margin-block: 7.2rem 6rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header img {
+  width: 22.4rem;
 }
 
 main {
@@ -104,6 +109,8 @@ main * {
 .timer__head span {
   display: inline-block;
   width: 8rem;
+  color: #a5b6ee;
+  font-weight: bold;
 }
 
 .timer__time .time {
@@ -156,4 +163,9 @@ main * {
 .btn__reset.active {
   background-color: #fb7099;
   color: #fff;
+}
+
+footer {
+  color: #8596bf;
+  margin-top: 6rem;
 }
