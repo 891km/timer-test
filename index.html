@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>타이머</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-logo">
+        <h1 class="sr-only">위니브</h1>
+        <img src="./assets/weniv-logo.svg" />
+      </div>
+    </header>
+
+    <main>
+      <section class="section__timer">
+        <h2 class="title">TIMER</h2>
+
+        <div class="diviser"></div>
+
+        <div class="timer">
+          <div class="timer__head">
+            <span>HRS</span><span>MIN</span><span>SEC</span>
+          </div>
+          <div class="timer__time">
+            <input class="time time--hrs" value="0" type="number" />
+            <input class="time time--min" value="0" type="number" />
+            <input class="time time--sec" value="0" type="number" />
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="btn btn__start">START</button>
+          <button class="btn btn__reset">RESET</button>
+        </div>
+      </section>
+    </main>
+    <footer>ⓒ WENIV CORP.</footer>
+  </body>
 </html>

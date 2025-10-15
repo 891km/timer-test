@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #a5b6ee;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+}
+
+input {
+  border: none;
+}
+
+/* body * {
+  border: 1px solid pink;
+} */
+
+/* header */
+header {
+  flex: 0 0 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+.section__timer {
+  margin: 0 auto;
+  background-color: #5572bb;
+
+  width: 40rem;
+  height: 36rem;
+  border-radius: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+main * {
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+}
+
+.diviser {
+  width: 90%;
+  height: 1px;
+}
+
+.timer {
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer__head,
+.timer__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.timer__head span {
+  display: inline-block;
+  width: 8rem;
+}
+
+.timer__time .time {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4c65a0;
+
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.btn {
+  width: 11.2rem;
+  height: 4.8rem;
+  border-radius: 100000px;
+  border: none;
+  background-color: #324577;
+  color: #617199;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.btn__start:hover,
+.btn__start.ready {
+  background-color: #5180ff;
+  color: #fff;
+}
+
+.btn__start.active {
+  background-color: #15c2b8;
+  color: #fff;
+}
+
+.btn__reset:hover,
+.btn__reset.active {
+  background-color: #fb7099;
+  color: #fff;
+}
