@@ -73,6 +73,10 @@ function resetStatus() {
   $resetBtn.classList.remove("active");
 }
 
+function displayTime(time) {
+  return time;
+}
+
 // reset
 $resetBtn.addEventListener("click", (e) => {
   clearInterval(intervalID);
