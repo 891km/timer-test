@@ -54,7 +54,10 @@ $startBtn.addEventListener("click", () => {
       $timeMin.value = parseInt((totalTime % 3600) / 60);
       $timeHrs.value = parseInt(totalTime / 3600);
 
-      if (totalTime <= 0) resetStatus();
+      if (totalTime <= 0) {
+        alert("타이머가 종료되었습니다!");
+        resetStatus();
+      }
     }, 1000);
   }
 });
